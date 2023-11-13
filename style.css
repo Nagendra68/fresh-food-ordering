@@ -1,0 +1,226 @@
+/*CSS Reset*/
+*{
+    margin:0;
+    padding:0;
+}
+
+
+/*CSS Variables{}*/
+:root{
+    --navbar-height:59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;  
+    position:relative;  
+    
+    
+}
+
+#logo img{
+    margin:0vw 0.6vw;
+    height:55px;
+    width: 55px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo 2', sans-serif
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration:none;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    opacity:.69;
+    z-index:-1;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: blanchedalmond;
+}
+
+/*home section*/
+#home{
+    display: flex;
+    padding:3px 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height:580px;
+}
+
+#home::before{
+    content: "";
+    top:0px;
+    position: absolute;
+    background: url('https://cdn.pixabay.com/photo/2017/02/15/10/39/salad-2068220_640.jpg') no-repeat center/cover;
+    height: 67%;
+    width:100%;
+    z-index: -1;
+    opacity:0.87;
+}
+
+/*services section*/
+#services{
+   margin:34px;
+   display:flex; 
+   flex-wrap: nowrap;
+}
+
+#services .box{
+   border:2px solid brown;
+   padding:34px;
+   margin:-15px 70px 20px 70px;
+   border-radius: 23px;
+   background-color: rgb(240, 228, 228);
+
+ }
+
+ #services .box img{
+    height:200px;
+    width:250px;
+    display:block;
+    margin:auto;
+ }
+
+ #services .box p{
+    font-family: 'Bree Serif', serif;
+
+ }
+
+/*utility classes*/
+.h-primary{
+    font-size: 3.8rem;
+    padding:12px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding:12px;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border:2px solid white;
+    background-color:rgb(224, 224, 101);
+    border-radius: 10px;
+    margin:20px;
+}
+.btn:hover{
+    background-color: black;
+    color:white;
+    cursor:pointer;
+
+}
+.center{
+    text-align: center;
+}
+
+.client-item{
+    display:flex;
+    justify-content:center;
+    margin:40px;
+    height:150px;
+   
+}
+.client-item img{
+    display:flex;
+   margin: 10px;
+}
+
+#client-section::before{
+    content:"";
+    position:absolute;
+    background: url('https://media.istockphoto.com/id/1154261977/photo/business-and-technology-concept-group-of-engineer.jpg?s=612x612&w=0&k=20&c=Q3xwNgXZ_N5Ps9WwzSrMaApKdQtyzATCzwP8yPfAcLw=') no-repeat center center/cover;
+    height:350px;
+    width:100%;
+    z-index: -1;
+    opacity:0.89;
+} 
+
+/*contact section*/
+#contact-box{
+    display:flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+    font-size:1.3rem;
+    padding-bottom: 10px;
+}
+
+#contact-box input,#contact-box textarea{
+    display:flex;
+    width:100%;
+    height:2rem;
+    margin:10px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+#contact-us::before{
+    content: "";
+    position:absolute;
+    background: url('https://media.istockphoto.com/id/1334575820/photo/business-woman-using-mobile-smartphone-on-global-network-connection-and-data-customer.jpg?s=612x612&w=0&k=20&c=R-4o_mZwyizgbPW5-cyOgkpTQE9wqLesEL_5CfuZ4T4=') no-repeat center center/cover;
+    width:100%;
+    height:60%;
+    z-index:-12;
+    opacity:0.89;
+    
+
+}
+
+#contact-box form{
+    width:40%;
+}
+
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+footer{
+    background-color: black;
+    color:white;
+    padding:10px 20px;
+}
+
+ 
+
+

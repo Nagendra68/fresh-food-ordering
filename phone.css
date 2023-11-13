@@ -1,0 +1,101 @@
+/*navigation section*/
+#navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding:0px 10px;
+}
+
+#home{
+    height:370px;
+    padding:3px 60px;
+}
+
+#home::before{
+    height: 455px;
+}
+#home p{
+    font-size: 17px;
+}
+
+
+
+
+/*services section*/
+
+#services{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#services .box{
+    margin:10px 0px;
+    padding:10px 0px;
+}
+#services .box img{
+    width: 30vw;
+    height:30vw;
+}
+/*clients section*/
+#client-section{
+
+}
+.client-item{
+   flex-wrap: wrap;
+    padding-top: 0%;
+    margin: 20px;
+    height: 202px;
+
+    
+    
+}
+#client-section::before{
+    content:"";
+    position:absolute;
+    background: url('https://media.istockphoto.com/id/1154261977/photo/business-and-technology-concept-group-of-engineer.jpg?s=612x612&w=0&k=20&c=Q3xwNgXZ_N5Ps9WwzSrMaApKdQtyzATCzwP8yPfAcLw=') no-repeat center center/cover;
+    height:40%;
+    width:100%;
+    z-index: -1;
+    opacity:0.89;
+} 
+
+
+.client-item img{
+    height:5rem ;
+    width:5rem;
+    padding:6px;
+}
+
+/*contact us section*/
+
+#contact-us{
+   padding-top: 10px;
+}
+
+#contact-us::before{
+    content: "";
+    position:absolute;
+    background: url('https://media.istockphoto.com/id/1334575820/photo/business-woman-using-mobile-smartphone-on-global-network-connection-and-data-customer.jpg?s=612x612&w=0&k=20&c=R-4o_mZwyizgbPW5-cyOgkpTQE9wqLesEL_5CfuZ4T4=') no-repeat center center/cover;
+    width:100%;
+    height:60%;
+    z-index:-12;
+    opacity:0.89;
+    
+
+}
+/*footer secton*/
+footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/*utility classes*/
+
+.h-primary{
+    font-size: 30px;
+}
